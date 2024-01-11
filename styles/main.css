@@ -1,0 +1,113 @@
+:root{
+    --peach-regular:#FAA996;
+    --soft-mint: #CBE7E1;
+    --accent: #A8D1E7; 
+    --sage: #ABB6B0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar.navbar-fh{
+    background-color: #B5DAD9;
+}
+.container-fluid.class-pattern{
+    background-image: url("../assets/img-bg-pattern.png");
+    background-size: contain;
+    padding: 0px;
+    background-repeat: repeat-x;
+}
+.btn.btn-primary{
+    background-color: #A8D1E7;
+    border-radius: 50px;
+    border-color: #A8D1E7;
+    transition-property: box-shadow;
+    transition-duration: 0.4s;
+    padding: 20px;
+    font-weight: bold;
+}
+.btn.btn-secondary{
+    background-color: #E7B7B5;
+    border-radius: 50px;
+    border-color: #E7B7B5;
+    transition-property: box-shadow;
+    transition-duration: 0.4s;  
+    padding: 20px;
+    font-weight: bold;
+}
+.btn.btn-primary:hover{
+    box-shadow: 4px 4px 6px #4C9BCD;
+}
+.btn.btn-secondary:hover{
+    box-shadow: 4px 4px 6px #D37B78;
+}
+.container-fluid.peach-background{
+    background-color: var(--peach-regular);
+    padding: 4rem 6rem;
+}
+.btn.btn-success{
+    background-color: var(--peach-regular);
+    border-radius: 50px;
+    border-color: var(--peach-regular);
+    transition-property: box-shadow;
+    transition-duration: 0.4s;  
+    padding: 5px 20px;
+}
+.btn.btn.btn-success:hover{
+    box-shadow: 4px 4px 6px #D37B78;
+}
+.container-fluid.softmint-background{
+    background-color: var(--soft-mint);
+    border: 40px solid white;
+    padding: 40px;
+}
+
+    @media only screen and (max-width: 600px) {
+        .container-fluid.softmint-background{
+          border: 10px solid white;
+        }
+      }
+      .form-custom{
+          width: 80%;
+          min-width: 80%;
+      }
+
+      .form-custom input{
+          width: 70%;
+      }
+
+      .form-custom button{
+          width: 28%;
+          margin-left: 2%;
+          height: 48px;
+      }
+
+      .social-media-links a{
+          height: 53px;
+          width: 53px;
+          border-radius: 50%;
+          background-color: var(--accent);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 32px;
+          margin: 10px;
+          text-decoration: none;
+      }
+      .footer-nav a{
+          color: var(--accent);
+          text-decoration: none;
+          display:block;
+      }
+      .btn-success:hover{
+          width: 100%;
+          position: absolute;
+          background-color: #E7B7B5;
+          font-weight: bold;
+      }
+      .form-custom{
+          position: relative;
+      }
+      .form-control:hover{
+          border: 4px var(--sage) solid;
+      }
